@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+body{
+  background-image: url('https://res.cloudinary.com/dnv60ey6k/image/upload/v1613149115/fitter/roadiohead_2_aimfnv.jpg');
+  background-size: 50%;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  background-image: url('https://fontmeme.com/permalink/210215/aca78fb78be6ae68321302b97e1eb229.png');
+  opacity: 50%; 
+  font-size: 87px;
+  font-family: 'Major Mono Display', monospace;
+  min-height: 86px;
+}
+
+.drum-machine {
+  margin:2rem auto auto auto;
+  border-radius:.7rem;
+  background-color: #92f5fc;
+  opacity: 65%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 3;
+  height: auto;
+  width: 335px;
+  box-shadow: 0 0 15px 2px #92f5fc,inset 0 0 25px 2px #92f5fc;
+  
+}
+
+.drum-pad {
+  border:0px solid black;
+  border-radius:.6rem;
+  text-align: center;
+  max-width: 85px;
+  min-height:85px;
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 4.7rem;
+  font-family: 'Major Mono Display',  monospace;
+  color: #e6f1ff;
+  box-shadow: 0 0 5px 2px #92f5fc,inset 0 0 5px 2px #92f5fc;
+}
+.drum-pad:hover {
+  color: #f786c6;
+  cursor: pointer;
+}
+
+#display {
+  
+  align-items: center;
+  border-radius:.6rem;
+  display: flex;
+  margin: 15px auto 10px auto;
+  padding: 20px;
+  width: 205px;
+  background-color: #a1eda8;
+  justify-content: center;
+  opacity: 80%;
+  font-size: 20px;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  box-shadow: 0 0 15px 2px #92f5fc,inset 0 0 25px 2px #92f5fc
+}
+#footer {
+  margin:2rem auto auto auto;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+}
