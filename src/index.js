@@ -44,7 +44,7 @@ import './style.css';
 //
 // I'd suggest naming this RADIO_SOUNDS. This has a readability benefit of the reader
 // instantly knowing that this is a global variable simply by looking at it.
-const radioSounds = [
+const RADIO_SOUNDS = [
   /**
    * Your `src` property in the objects below seem to share some common things.
    * They all point to the URL <https://res.cloudinary.com/dnv60ey6k/video/upload/v1613076443/>.
@@ -211,7 +211,7 @@ class App extends React.Component{
         <div id="display">press button</div>
         <div className='drum-machine' id='drum-machine'>
           {/* nice re-use of components! */}
-          {radioSounds.map((item) => {
+          {RADIO_SOUNDS.map((item) => {
             // nice use of a closure to play the sound :-)
             return <DrumPad play={this.playSound} audioID={item.audioID} 
             value={item.key} src={item.src} keyCode={item.keyCode}/>
