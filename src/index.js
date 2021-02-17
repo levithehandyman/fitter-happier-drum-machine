@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 
-const MEDIA_URL = 'https://res.cloudinary.com/dnv60ey6k/video/upload/fitter/';
+const MEDIA_URL = 'https://res.cloudinary.com/dnv60ey6k/video/upload/fitter';
 const RADIO_SOUNDS = [
   /**
    * Your `src` property in the objects below seem to share some common things.
@@ -38,14 +38,14 @@ const RADIO_SOUNDS = [
     keyCode: 87,
     key: 'W',
     audioID: 'happier',
-    src: 'https://res.cloudinary.com/dnv60ey6k/video/upload/v1613076443/fitter/happer_iobvge.wav'
+    src: `${MEDIA_URL}/happer_iobvge.wav`
   },
   
   {
     keyCode: 69,
     key: 'E',
     audioID: 'productive',
-    src: 'https://res.cloudinary.com/dnv60ey6k/video/upload/v1613076443/fitter/more_productive_r3uefy.wav'
+    src: `${MEDIA_URL}/more_productive_r3uefy.wav`
   },
   
   {
