@@ -194,13 +194,11 @@ class App extends React.Component{
   // variable name.
   playSound = (val, audioID) => {
     const audio = document.getElementById(val);
-    // This variable is unused and could be removed.
-    const button = document.getElementById(audioID);
+    
     audio.currentTime = 0;
     audio.play();
    
-    $('#display').text(audioID);
-    
+    $('#display').text(audioID);  
   }
  
   
