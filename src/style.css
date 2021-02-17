@@ -1,3 +1,13 @@
+/*
+  Not much to complain about in here! Nice and simple.
+
+  Overall, try to maintain consistent spacing everywhere there is spacing,
+  look for opportunities to re-use code. One example is below. Also, naming
+  your classes in a meaningful way helps make that CSS classes you add to your HTML
+  more informative of what the thing is and vice-versa.
+
+  For later, look up the naming convention BEM: http://getbem.com/introduction/
+*/
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 body{
@@ -16,6 +26,11 @@ body{
 }
 
 .drum-machine {
+  /*
+    Style note for the anal-retentive - your property should always have a space after
+    the colon:
+    `margin: 2rem auto auto auto;`
+  */
   margin:2rem auto auto auto;
   border-radius:.7rem;
   background-color: #92f5fc;
@@ -39,9 +54,25 @@ body{
   justify-content: center;
   margin: 10px;
   font-size: 4.7rem;
+  /*
+    you could probably create a new CSS class called `.font-family` and apply it
+    to whatever HTML element needs this font.
+
+    You could also target multiple selectors in one go:
+
+    .drum-pad,
+    #display,
+    .title {
+      font-family: 'Major Mono Display',  monospace;
+    }
+  */
   font-family: 'Major Mono Display',  monospace;
   color: #e6f1ff;
   box-shadow: 0 0 5px 2px #92f5fc,inset 0 0 5px 2px #92f5fc;
+  /* 
+    our poor statements are sandwiched right up against each other, and gaze with
+    envy upon their brothers, who have all that breathing room around them.
+  */
 }
 .drum-pad:hover {
   color: #f786c6;
