@@ -31,7 +31,6 @@ const RADIO_SOUNDS = [
     keyCode: 81,
     key: 'Q',
     audioID: 'fitter',
-    // Seems like this one isn't up in cloudinary, it's a 404
     src: `${MEDIA_URL}/fitter_riupy7.wav`
   },
  
