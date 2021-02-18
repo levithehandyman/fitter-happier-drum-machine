@@ -8,21 +8,44 @@
 
   For later, look up the naming convention BEM: http://getbem.com/introduction/
 */
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
-body{
-  background-image: url('https://res.cloudinary.com/dnv60ey6k/image/upload/v1613149115/fitter/roadiohead_2_aimfnv.jpg');
+body {
+  background-image: url("https://res.cloudinary.com/dnv60ey6k/image/upload/v1613149115/fitter/roadiohead_2_aimfnv.jpg");
   background-size: 50%;
   position: relative;
 }
 
 .title {
   text-align: center;
-  background-image: url('https://fontmeme.com/permalink/210215/aca78fb78be6ae68321302b97e1eb229.png');
-  opacity: 50%; 
+  background-image: url("https://fontmeme.com/permalink/210215/aca78fb78be6ae68321302b97e1eb229.png");
+  opacity: 50%;
   font-size: 87px;
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   min-height: 86px;
+}
+
+.tooltip {
+  position: relative;
+  display: flex;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: black;
+  margin: 100px auto auto 20px;
+  color: #fff;
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: fixed;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .drum-machine {
@@ -31,8 +54,8 @@ body{
     the colon:
     `margin: 2rem auto auto auto;`
   */
-  margin:2rem auto auto auto;
-  border-radius:.7rem;
+  margin: 2rem auto auto auto;
+  border-radius: 0.7rem;
   background-color: #92f5fc;
   opacity: 65%;
   display: grid;
@@ -40,17 +63,16 @@ body{
   grid-template-rows: 3;
   height: auto;
   width: 335px;
-  box-shadow: 0 0 15px 2px #92f5fc,inset 0 0 25px 2px #92f5fc;
-  
+  box-shadow: 0 0 15px 2px #92f5fc, inset 0 0 25px 2px #92f5fc;
 }
 
 .drum-pad {
-  border:0px solid black;
-  border-radius:.6rem;
+  border: 0px solid black;
+  border-radius: 0.6rem;
   text-align: center;
   max-width: 85px;
-  min-height:85px;
-  display:flex;
+  min-height: 85px;
+  display: flex;
   justify-content: center;
   margin: 10px;
   font-size: 4.7rem;
@@ -66,9 +88,9 @@ body{
       font-family: 'Major Mono Display',  monospace;
     }
   */
-  font-family: 'Major Mono Display',  monospace;
+  font-family: "Major Mono Display", monospace;
   color: #e6f1ff;
-  box-shadow: 0 0 5px 2px #92f5fc,inset 0 0 5px 2px #92f5fc;
+  box-shadow: 0 0 5px 2px #92f5fc, inset 0 0 5px 2px #92f5fc;
   /* 
     our poor statements are sandwiched right up against each other, and gaze with
     envy upon their brothers, who have all that breathing room around them.
@@ -80,9 +102,8 @@ body{
 }
 
 #display {
-  
   align-items: center;
-  border-radius:.6rem;
+  border-radius: 0.6rem;
   display: flex;
   margin: 15px auto 10px auto;
   padding: 20px;
@@ -91,13 +112,13 @@ body{
   justify-content: center;
   opacity: 80%;
   font-size: 20px;
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   font-weight: bold;
-  box-shadow: 0 0 15px 2px #92f5fc,inset 0 0 25px 2px #92f5fc
+  box-shadow: 0 0 15px 2px #92f5fc, inset 0 0 25px 2px #92f5fc;
 }
 #footer {
-  margin:2rem auto auto auto;
+  margin: 2rem auto auto auto;
   text-align: center;
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   font-weight: bold;
 }

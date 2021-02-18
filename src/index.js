@@ -127,11 +127,24 @@ class App extends React.Component{
       <div>
         <div className="title"></div>
         <div id="display">press button</div>
-        <div className='drum-machine' id='drum-machine'>
-          {RADIO_SOUNDS.map((item) => {
-            return <DrumPad play={this.playSound} audioID={item.audioID} 
-            value={item.key} src={item.src} keyCode={item.keyCode}/>
-          })}
+        <div className='tooltip'>
+           <span class="tooltiptext">
+             Q-fitter <br />
+             W-happier <br />
+             E-productive <br />
+             A-comfortable <br />
+             S-drinking <br />
+             D-exercise <br />
+             Z-employee <br />
+             X-ease <br />
+             C-eating <br />
+          </span>  
+          <div className='drum-machine' id='drum-machine'>
+            {RADIO_SOUNDS.map((item) => {
+              return <DrumPad play={this.playSound} audioID={item.audioID} 
+              value={item.key} src={item.src} keyCode={item.keyCode}/>
+            })}
+          </div>
         </div>
         <footer id='footer'><p>lth {new Date().getFullYear()}</p></footer>
       </div>
