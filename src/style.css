@@ -15,29 +15,6 @@ body {
   min-height: 86px;
 }
 
-.tooltip {
-  position: relative;
-  display: flex;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 180px;
-  background-color: black;
-  margin: 100px auto auto 20px;
-  color: #fff;
-  font-family: "Major Mono Display", monospace;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: fixed;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .drum-machine {
   margin: 2rem auto auto auto;
   border-radius: 0.7rem;
@@ -75,8 +52,9 @@ body {
   display: none;
   position: absolute;
   bottom: 100%;
-  font-size: 12px;
-  background-color: grey;
+  font-size: 10px;
+  color: rgb(5, 1, 1);
+  background-color: #92f5fc;
 }
 
 .drum-pad:hover {
