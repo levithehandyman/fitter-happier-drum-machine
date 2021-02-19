@@ -58,12 +58,25 @@ body {
   max-width: 85px;
   min-height: 85px;
   display: flex;
+  position: relative;
   justify-content: center;
   margin: 10px;
   font-size: 4.7rem;
   font-family: "Major Mono Display", monospace;
   color: #e6f1ff;
   box-shadow: 0 0 5px 2px #92f5fc, inset 0 0 5px 2px #92f5fc;
+}
+
+.drum-pad:hover .drum-pad-label {
+  display: block;
+}
+
+.drum-pad-label {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  font-size: 12px;
+  background-color: grey;
 }
 
 .drum-pad:hover {

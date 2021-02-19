@@ -97,6 +97,7 @@ class DrumPad extends React.Component{
       id={this.props.audioID}
       onClick={() => this.props.play(this.props.value,this.props.audioID)} 
       style={{background:"url(" + `https://res.cloudinary.com/dnv60ey6k/image/upload/v1613402778/fitter/my_x_hnow6b.jpg` + ")"}}>
+          <span className="drum-pad-label">{this.props.audioID}</span>
           {this.props.value}
         <audio 
           className='clip' 
